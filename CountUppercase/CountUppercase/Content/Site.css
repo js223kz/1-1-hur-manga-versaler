@@ -1,0 +1,17 @@
+﻿body {
+}
+.field-validation-errors{
+    color: #f00;
+}
+.validation-summary-errors{
+    color: #f00;
+}
+.headline{
+    border-bottom: solid 20px #808080;
+    width: 755px;
+    line-height:50px;
+}
+.userinputtextbox {
+    height: 200px;
+    width: 750px;
+}
