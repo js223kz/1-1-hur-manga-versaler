@@ -5,10 +5,10 @@ using System.Web;
 
 namespace CountUppercase.Model
 {
-    public class TextAnalayzer
+    public static class TextAnalayzer
     {
        
-        public int GetNumberOfCapitals(string text)
+        public static int GetNumberOfCapitals(string text)
         {
             int numberOfUpperCase = 0;
 
@@ -22,7 +22,5 @@ namespace CountUppercase.Model
 
             return numberOfUpperCase;
         }
-
-
     }
 }

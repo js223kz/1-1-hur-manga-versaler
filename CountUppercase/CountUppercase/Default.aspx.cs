@@ -24,9 +24,7 @@ namespace CountUppercase
                 ClearTextBoxButton.Visible = true;
                 CalculateUpperCaseButton.Visible = false;
 
-                TextAnalayzer inputText = new TextAnalayzer();
-                int numberOfUpperCase = inputText.GetNumberOfCapitals(UserInputTextBox.Text);
-               
+                var numberOfUpperCase = TextAnalayzer.GetNumberOfCapitals(UserInputTextBox.Text);               
                 UpperCaseMessageLiteral.Text = numberOfUpperCase.ToString();
                 UpperCaseMessage.Visible = true;
            }    
