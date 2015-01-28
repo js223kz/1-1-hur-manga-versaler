@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <%--HeadLine--%>
         <h1 id="HeadLine" runat="server" class="headline">Hur många versaler?</h1>
-
+        
         <%--Textbox for user input and validationcontrols--%>
         <div>
             <asp:ValidationSummary ID="ValidationSummary" runat="server" CssClass="validation-summary-errors" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CountUppercase.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,22 +17,18 @@ namespace CountUppercase
         //Calculates number of uppercase letter
         protected void calculateUpperCaseButton_Click(object sender, EventArgs e)
         {
-            int numberOfUpperCase = 0;
             
             if (IsValid)
             {
                 UserInputTextBox.Enabled = false;
                 ClearTextBoxButton.Visible = true;
                 CalculateUpperCaseButton.Visible = false;
-                
-            foreach (char var in UserInputTextBox.Text) {
 
-                if(Char.IsUpper(var)){
-                    numberOfUpperCase++;
-                }
-           }
-           UpperCaseMessageLiteral.Text = numberOfUpperCase.ToString();
-           UpperCaseMessage.Visible = true;
+                var inputText = new TextAnalayzer();
+                int numberOfUpperCase = inputText.GetNumberOfCapitals(UserInputTextBox.Text);
+               
+                UpperCaseMessageLiteral.Text = numberOfUpperCase.ToString();
+                UpperCaseMessage.Visible = true;
            }    
        }
         
