@@ -7,11 +7,9 @@ namespace CountUppercase.Model
 {
     public class TextAnalayzer
     {
-        public string Text{ get; set;}
-   
+       
         public int GetNumberOfCapitals(string text)
         {
-            Text = text;
             int numberOfUpperCase = 0;
 
             foreach (char var in text)
